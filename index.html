@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <style>
+    body, html {width: 100%;
+    height: 100%;
+        padding: 0;
+    margin: 0;}
+    body {height: auto;
+    height: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    background-image: url('./Images/lake.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  justify-content: center;}
+    #main-container {width: 70%;
+    height: 100%;
+    background-color: rgb(195, 224, 254, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    header {width: 100%;
+    background-color: rgba(174, 219, 163, 0.5);
+    border-bottom: 1px solid rgba(12, 12, 12, 0.15);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+    header > nav, ul {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    header nav > ul {
+            list-style-type: none;    
+        }
+            header nav > ul > li > a {
+                    display: flex;
+                    flex-direction: row;
+                    color: rgba(0,0,0,.65);
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    padding: 0 0.5rem;
+                    text-decoration: none;
+                }
+            header > nav > ul > li:hover > a {
+                        color: rgb(140, 193, 193);  
+                    }
+    #slide-pics {width: 90%;
+    height: 40%;
+    border: 1px solid rgba(12, 12, 12, 0.15);
+    position: relative;
+  margin: 5% 0 2% 0;
+  display: flex;}
+    .width100 {width: 100%;
+    height: 100%}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides {width: 100%;
+height: 100%}
+
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <header>
+                    <nav>
+                        <img src="./Images/Banite.png" alt="Logo">
+                        <ul>
+                            <li><a href="#">Начало</a></li>
+                            <li><a href="#">За Баните</a></li>
+                            <li><a href="#">Настаняване</a></li>
+                            <li><a href="#">Галерия</a></li>
+                            <li><a href="#">Резервирай</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+        </header>
+        <div id="slide-pics">
+            <div class="mySlides fade">
+                <img class="width100" src="./Images/slide1.JPG">
+              </div>
+              <div class="mySlides fade">
+                <img class="width100" src="./Images/slide2.jpg">
+              </div>
+              <div class="mySlides fade">
+                <img class="width100" src="./Images/slide3.jpg">
+              </div>
+            </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
