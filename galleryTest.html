@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body, html {height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    padding: 0 4px;
+    height: 100%;
+}
+
+a>img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {height: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.medium-pic {width: 100%;
+height: 40%;
+margin-top: 8px;
+vertical-align: middle;}
+.high-pic {width: 100%;
+height: 75%;
+vertical-align: middle;
+margin-top: 8px;}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+</div>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <div class="high-pic"><a target="_blank" href="./Images/Gallery1.JPG"><img src="./Images/Gallery1.JPG"></a></div>
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery2.JPG"><img src="./Images/Gallery2.JPG"></a></div>
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery3.JPG"><img src="./Images/Gallery3.JPG"></a></div>
+  </div>
+  <div class="column">
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery4.JPG"><img src="./Images/Gallery4.JPG"></a></div>
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery5.JPG"><img src="./Images/Gallery5.JPG"></a></div>
+    <div class="high-pic"><a target="_blank" href="./Images/Gallery7.JPG"><img src="./Images/Gallery7.JPG"></a></div>
+  </div>  
+  <div class="column">
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery10.JPG"><img src="./Images/Gallery10.JPG"></a></div>
+    <div class="high-pic"><a target="_blank" href="./Images/Gallery6.JPG"><img src="./Images/Gallery6.JPG"></a></div>
+    <div class="medium-pic"><a target="_blank" href="./Images/Gallery8.JPG"><img src="./Images/Gallery8.JPG"></a></div>
+  </div>
+</div>
+
+</body>
+</html>

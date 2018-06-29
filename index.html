@@ -5,97 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Banite House</title>
-    <style>
-    body, html {width: 100%;
-    height: 100%;
-        padding: 0;
-    margin: 0;}
-    body {height: auto;
-    height: 100%;
-    min-height: 100%;
-    text-rendering: optimizeLegibility;
-    background-image: url('./Images/lake.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-  justify-content: center;}
-    #main-container {width: 70%;
-    height: 100%;
-    background-color: rgb(195, 224, 254, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;}
-    header {width: 100%;
-    background-color: rgba(174, 219, 163, 0.5);
-    border-bottom: 1px solid rgba(12, 12, 12, 0.15);
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-    overflow: auto;
-}
-    header > nav, ul {
-        display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-    header nav > ul {
-            list-style-type: none;    
-        }
-            header nav > ul > li > a {
-                    display: flex;
-                    flex-direction: row;
-                    color: rgba(0,0,0,.65);
-                    font-weight: 700;
-                    font-size: 1.2rem;
-                    padding: 0 0.5rem;
-                    text-decoration: none;
-                }
-            header > nav > ul > li:hover > a {
-                        color: rgb(140, 193, 193);  
-                    }
-    #slide-pics {width: 90%;
-    height: 40%;
-    border: 1px solid rgba(12, 12, 12, 0.15);
-    position: relative;
-  margin: 5% 0 2% 0;
-  display: flex;}
-    .width100 {width: 100%;
-    height: 100%}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #717171;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-.mySlides {width: 100%;
-height: 100%}
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <div id="main-container">
@@ -103,15 +13,16 @@ height: 100%}
                     <nav>
                         <img src="./Images/Banite.png" alt="Logo">
                         <ul>
-                            <li><a href="#">Начало</a></li>
+                            <li><a href="index.html">Начало</a></li>
                             <li><a href="#">За Баните</a></li>
                             <li><a href="#">Настаняване</a></li>
-                            <li><a href="#">Галерия</a></li>
+                            <li><a href="gallery.html">Галерия</a></li>
                             <li><a href="#">Резервирай</a></li>
                             <li><a href="#">Контакти</a></li>
                         </ul>
                     </nav>
         </header>
+        <p id="heading">Welcome to Guest House Banite</p>
         <div id="slide-pics">
             <div class="mySlides fade">
                 <img class="width100" src="./Images/slide1.JPG">
@@ -128,6 +39,11 @@ height: 100%}
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec malesuada purus. Sed eget lectus pharetra, vestibulum leo at, 
+    tempor ligula. Quisque in tempus nulla. Donec in metus dui. Nullam quis eros enim. Quisque cursus neque nec sapien dictum, 
+    in rutrum tellus suscipit. Pellentesque ut imperdiet odio, vitae hendrerit enim. Nunc posuere, ligula non ornare lacinia, 
+    ex enim consectetur nisl, eu eleifend lectus nunc non dolor. Phasellus non sodales justo. Nunc felis massa, vehicula at vulputate sed, 
+    posuere mattis justo. </p>
     </div>
     <script>
         var slideIndex = 0;

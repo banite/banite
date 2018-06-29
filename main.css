@@ -1,0 +1,97 @@
+    html {width: 100%;
+        height: 100%;
+            padding: 0;
+        margin: 0;}
+    body {padding: 0;
+        margin: 0;
+        height: 120%;
+        width: auto;
+    text-rendering: optimizeLegibility;
+    background-image: url('./Images/lake.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  justify-content: center;}
+    #main-container {width: 70%;
+    height: 100%;
+    background-color: rgb(195, 224, 254, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    header {width: 100%;
+    background-color: rgba(174, 219, 163, 0.5);
+    border-bottom: 1px solid rgba(12, 12, 12, 0.15);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+    header > nav, ul {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    header nav > ul {
+            list-style-type: none;    
+        }
+            header nav > ul > li > a {
+                    display: flex;
+                    flex-direction: row;
+                    color: rgba(0,0,0,.65);
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    padding: 0 0.5rem;
+                    text-decoration: none;
+                }
+            header > nav > ul > li:hover > a {
+                        color: rgb(140, 193, 193);  
+                    }
+    #slide-pics {width: 90%;
+    height: 40%;
+    border: 1px solid rgba(12, 12, 12, 0.15);
+    position: relative;
+  margin: 0 0 2% 0;
+  display: flex;}
+    .width100 {width: 100%;
+    height: 100%}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides {width: 100%;
+height: 100%}
+p {color: rgba(0,0,0,.65);
+font-size: 1.5em;
+text-align: center;
+padding-left: 5%;
+padding-right: 5%}
+#heading {color: rgba(0,0,0,.65);
+font-size: 2em;
+padding: none;}
