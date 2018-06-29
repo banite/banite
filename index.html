@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="main-container">
+        <header>
+                    <nav>
+                        <img src="./Images/Banite.png" alt="Logo">
+                        <ul>
+                            <li><a href="index.html">Начало</a></li>
+                            <li><a href="#">За Баните</a></li>
+                            <li><a href="#">Настаняване</a></li>
+                            <li><a href="gallery.html">Галерия</a></li>
+                            <li><a href="#">Резервирай</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+        </header>
+        <p id="heading">Welcome to Guest House Banite</p>
+        <div id="slide-pics">
+            <div class="mySlides fade">
+                <img class="width100" src="./Images/slide1.JPG">
+              </div>
+              <div class="mySlides fade">
+                <img class="width100" src="./Images/slide2.jpg">
+              </div>
+              <div class="mySlides fade">
+                <img class="width100" src="./Images/slide3.jpg">
+              </div>
+            </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec malesuada purus. Sed eget lectus pharetra, vestibulum leo at, 
+    tempor ligula. Quisque in tempus nulla. Donec in metus dui. Nullam quis eros enim. Quisque cursus neque nec sapien dictum, 
+    in rutrum tellus suscipit. Pellentesque ut imperdiet odio, vitae hendrerit enim. Nunc posuere, ligula non ornare lacinia, 
+    ex enim consectetur nisl, eu eleifend lectus nunc non dolor. Phasellus non sodales justo. Nunc felis massa, vehicula at vulputate sed, 
+    posuere mattis justo. </p>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
