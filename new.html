@@ -1,0 +1,34 @@
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6759" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      setTimeout(function() {
+          $('input_17').hint('ex: myname@example.com');
+       }, 20);
+    $('input_18').spinner({ imgPath:'https://cdn.jotfor.ms/images/', width: '60', maxValue:'', minValue:'', allowNegative: false, addAmount: 1, value:'0' });
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("22", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("22", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+ JotForm.formatDate({date:(new Date()), dateField:$("id_"+22)});
+ JotForm.displayLocalTime("hour_22", "min_22", "ampm_22");
+    /*INIT-END*/
+});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"name":"roomType","qid":"6","text":"Room Type","type":"control_dropdown"},null,null,null,{"name":"freePickup","qid":"10","text":"Free Pickup?","type":"control_radio"},null,null,null,{"name":"clickTo14","qid":"14","text":"Hotel Booking","type":"control_head"},null,{"name":"name","qid":"16","text":"Name","type":"control_fullname"},{"name":"email17","qid":"17","text":"E-mail","type":"control_email"},{"name":"numberOf18","qid":"18","text":"Number of Guests","type":"control_spinner"},null,{"name":"departureDate20","qid":"20","text":"Departure Date","type":"control_birthdate"},null,{"name":"arrivalDate","qid":"22","text":"Arrival Date & Time","type":"control_datetime"},null,null,null,null,null,{"name":"flightNumber28","qid":"28","text":"Flight Number","type":"control_textbox"},null,{"name":"specialRequests","qid":"30","text":"Special Requests","type":"control_textarea"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"name":"roomType","qid":"6","text":"Room Type","type":"control_dropdown"},null,null,null,{"name":"freePickup","qid":"10","text":"Free Pickup?","type":"control_radio"},null,null,null,{"name":"clickTo14","qid":"14","text":"Hotel Booking","type":"control_head"},null,{"name":"name","qid":"16","text":"Name","type":"control_fullname"},{"name":"email17","qid":"17","text":"E-mail","type":"control_email"},{"name":"numberOf18","qid":"18","text":"Number of Guests","type":"control_spinner"},null,{"name":"departureDate20","qid":"20","text":"Departure Date","type":"control_birthdate"},null,{"name":"arrivalDate","qid":"22","text":"Arrival Date & Time","type":"control_datetime"},null,null,null,null,null,{"name":"flightNumber28","qid":"28","text":"Flight Number","type":"control_textbox"},null,{"name":"specialRequests","qid":"30","text":"Special Requests","type":"control_textarea"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.6759" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.6759" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.6759" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=59fb4852cf3bfe589c6c6f21"/>
+
+
+
+<script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script>

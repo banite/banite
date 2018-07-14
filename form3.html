@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="main-container">
+            <header>
+                    <nav>
+                        <img src="./Images/Banite.png" alt="Logo">
+                        <ul>
+                            <li><a href="index.html">Начало</a></li>
+                            <li><a href="#">За Баните</a></li>
+                            <li><a href="#">Настаняване</a></li>
+                            <li><a href="gallery.html">Галерия</a></li>
+                            <li><a href="form.html">Резервирай</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+            </header>
+                    <div class="reservation" id="reservation">
+                            <form action="/bg/reservation#reservation" id="reserve_form" method="post">    <h2>Резервационна форма</h2>
+                    <ul class="inputs">
+                <li><label for="form_name">Вашето име</label><input type="text" name="form[name]" value="" id="form_name" /></li>
+                <li><label for="form_phone">Телефон</label><input type="text" name="form[phone]" value="" id="form_phone" /></li>
+                <li><label for="form_email">Е-mail</label><input type="text" name="form[email]" value="" id="form_email" /></li>
+                <li>
+                    <label for="reserve_room" >Тип стая</label>
+                    <span class="select">
+                        <input id="reserve_room" type="text" name="form[room]" value="Двойна стая"  />
+                        <ul id="choose_room">
+                            <li>Двойна стая</li>
+                            <li>Семеен апартамент</li>
+                            <li>Луксозен апартамент</li>
+                            <li>Двуспален апартамент</li>
+                        </ul>
+                    </span>
+                </li>
+                <li class="short">
+                    <span class="first">
+                        <label for="reserve_adults" >Възрастни</label>
+                        <span class="select">
+                            <input id="reserve_adults" type="text" name="form[adults]" value="0"  />
+                                <ul id="form_adults">
+                                    <li>0</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                </ul>
+                        </span>
+                    </span>
+                    <label for="reserve_children" >Деца</label>
+                    <span class="select">
+                        <input id="reserve_children" type="text" name="form[children]" value="0"  />
+                        <ul id="form_children">
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                        </ul>
+                    </span>
+                </li>
+                <li class="short dating">
+                    <span class="first">
+                        <label for="reserve_arrival" >Пристигане</label>
+                        <input id="reserve_arrival" type="text" name="form[arrival]" value=""  />
+                                    </span>
+                    <span>
+                        <label for="reserve_departure" >Заминаване</label>
+                        <input id="reserve_departure" type="text" name="form[departure]" value=""  />
+                                    </span>
+                </li>
+            </ul>
+            <div class="textarea"><label for="form_comment">Коментар</label><textarea name="form[comment]" id="form_comment" rows="5" cols="40"></textarea></div>
+            <div class="antispam">   
+                <div class="g-recaptcha" data-sitekey="6LcDURwUAAAAAHIVJp1P989XNp7flYimfcQhWEEK"></div>
+                <input type="submit" value="Изпрати запитване" class="submit" />
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
