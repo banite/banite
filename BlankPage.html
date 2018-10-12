@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <link rel="stylesheet" type="text/css" href="blank.css">
+</head>
+<body>
+    <div id="main-container">
+            <header>
+                    <div class="topnav" id="myTopnav">
+                            <img src="./Images/Banite.png" alt="Logo" class="sometimes-hidden-img">
+                            <a href="index.html" class="active">Начало</a>
+                            <a class="hide" href="#">За Баните</a>
+                            <a class="hide" href="#">Настаняване</a>
+                            <a class="hide" href="gallery.html">Галерия</a>
+                            <a class="hide" href="form.html">Резервирай</a>
+                            <a class="hide" href="#">Контакти</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                          </div>
+                    <!-- <nav class="topnav">
+                        <img src="./Images/Banite.png" alt="Logo" class="sometimes-hidden-img">
+                        <ul class="topnav">
+                            <li><a href="index.html">Начало</a></li>
+                            <li class="sometimes-hidden"><a href="#">За Баните</a></li>
+                            <li class="sometimes-hidden"><a href="#">Настаняване</a></li>
+                            <li class="sometimes-hidden"><a href="gallery.html">Галерия</a></li>
+                            <li class="sometimes-hidden"><a href="form.html">Резервирай</a></li>
+                            <li class="sometimes-hidden"><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav> -->
+            </header>
+            <div class="form">
+                
+                </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        </script>
+</body>
+</html>

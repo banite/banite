@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <div class="topnav" id="myTopnav">
+                <img src="./Images/Banite.png" alt="Logo" class="sometimes-hidden-img">
+                <a href="index.html" class="active1">Начало</a>
+                <a class="hide" href="zaBanite.html">За Баните</a>
+                <a class="hide" href="accommodation.html">Настаняване</a>
+                <a class="hide" href="gallery.html">Галерия</a>
+                <a class="hide" href="form.html">Резервирай</a>
+                <a class="hide" href="contact.html">Контакти</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+            <div class="info">
+                <p class="info-text"><img alt="" class="img-left" src="./Images/starozagorski_bani_9.jpg"/>Старозагорските минерални бани са балнеологичен курорт, разположен на 12 км северозападно от гр. Стара Загора, в южните гористи разклонения на Сърнена гора /дял от Средна гора/. Средната надморска височина на котловината, в която е разположен е 360 м., а ограждащите я околни хълмове са с височина от 600 до 800 метра. Покрити са с дъбови, габрови, лескови, липови и засадени борови гори. Климатът на курорта се определя от граничното му местоположение между субтропичната и умереноконтиненталната област и нископланинското му разположение, омекотен от средиземноморското влияние. Зимата е топла, но понякога с обилни снеговалежи. Летните дни са слънчеви, а нощите прохладни и приятни. Ветрове духат рядко, а мъгливите дни през годината са малко.</p>
+                <p class="info-text"><img alt="" class="img-right" src="./Images/starozagorski_bani_10.jpg"/>Минералната вода излиза на повърхността с дебит 20 л/сек при 42&deg;С. Минералната вода е подходяща за лечение на: опорно-двигателен апарат, периферната нервна система, гинекологични заболявания, бъбречни и урологични заболявания, стомашно-чревни заболявания и др. Днес Старозагорски бани са съвременен балнеологичен нископланински курорт. Уникалната природа, чистият въздух&nbsp;и минералната вода дават възможност за провеждане на цялостна оздравителна профилактика и възстановителна лечебна дейност. В курорта са изградени и функционират над 20 хотела и почивни станции на различни ведомства, разполагащи с много добра материална база и възможности за лечение. Легловата база е с капацитет за настаняване на над 2000 курортисти на ден.</p>
+                <p class="info-text"><img alt="" class="img-left" src="./Images/starozagorski_bani_11.jpg"/>Курортното селище има сравнително добре изградена и развита инфраструктура. Има красиво езеро и уютни паркове. Осигурена е редовна автобусна линия до общинския център Стара Загора. На територията на селището се намира единствената в област Стара Загора седмична санаториална детска градина № 16 &bdquo;Горски кът&quot;, строена през 1975 година. Разполага с капацитет за около 100 деца. Има две санаториални групи за деца, боледуващи от бронхиална астма и заболявания на горните дихателни пътища. В парк &bdquo;Дъбова гора&quot; се намира домът за стари хора с капацитет от 100 места, състоящ се от две самостоятелни сгради. Обучен медицински и помощен персонал денонощно обгрижва домуващите, голяма част от които са лежащо болни възрастни и самотни хора.</p>
+            </div>
+    </div>
+    <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+    </script>
+</body>
+</html>

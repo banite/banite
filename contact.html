@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banite House</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="main-container-contact">
+        <header>
+            <div class="topnav" id="myTopnav">
+                <img src="./Images/Banite.png" alt="Logo" class="sometimes-hidden-img">
+                <a href="index.html" class="active1">Начало</a>
+                <a class="hide" href="zaBanite.html">За Баните</a>
+                <a class="hide" href="accommodation.html">Настаняване</a>
+                <a class="hide" href="gallery.html">Галерия</a>
+                <a class="hide" href="form.html">Резервирай</a>
+                <a class="hide" href="contact.html">Контакти</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+        <div class="contact">
+            <div id="top-part">
+                <div class="contactUs">
+                    <h3>Връзка с нас:</h3>
+                    <address>
+                        <p><i class="fa fa-home"></i> Стара Загора 6000, Старозагорски Минерални Бани</p>
+                        <p><i class="fa fa-phone"></i> <a href="tel:+359888656524"> 0888656524</a></p>
+                        <p><i class="fa fa-envelope"></i> <a href="mailto:mitev.dimitar@gmail.com" rel="nofollow"> mitev.dimitar@gmail.com</a></p>
+                    </address>
+
+                </div>
+                <div class="contactUs">
+                    <h3>Социални мрежи:</h3>
+                <address>
+                    <p><i class="fa fa-facebook"></i><a href="https://www.facebook.com/dimitar.mitev.522" target="_blank"> Facebook</a></p>
+                    <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/" target="_blank"> Twitter</a></p>
+                    <p><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/" target="_blank"> Google+</a></p>
+                </address>
+                </div>
+            </div>
+            <div id="bottom-part">
+                <h3 class="no-margin">Find us here!</h3>
+                <!-- <div id="map" onclick="window.open('https://www.google.bg/maps/place/6062+%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%B7%D0%B0%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B8+%D0%B1%D0%B0%D0%BD%D0%B8/@42.4426034,25.5079418,12z/data=!4m5!3m4!1s0x40a843f06442611d:0xa00a014cd0f24e0!8m2!3d42.4495518!4d25.4947651','mywindow');"></div> -->
+                <div id="googleMap" style="width:100%;height:400px;"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx8lSNlR1gOZnkqNpguXCIR0pa413Xe6Y&callback=myMap"></script>
+</body>
+
+</html>
