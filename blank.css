@@ -126,3 +126,6 @@ header > div > a:hover {
     }
    
 }
+div > img {
+    height: 100%;
+}

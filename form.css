@@ -4,7 +4,7 @@ html {width: 100%;
     margin: 0;}
 body {padding: 0;
     margin: 0;
-    height: auto;
+    height: 100%;
     width: auto;
 text-rendering: optimizeLegibility;
 background-image: url('./Images/lake.JPG');
@@ -31,7 +31,7 @@ header {width: 100%;
     flex-wrap: wrap;
     overflow: hidden;
     overflow-x: auto;
-    height: auto;
+    height: 20%;
     background-color: rgba(174, 219, 163, 0.5);
     }
 .topnav {width: 100%;
@@ -141,7 +141,11 @@ display: flex;
             border-radius: 25px;
             text-align: center;
             font-size: 1.2rem;
-            margin-bottom: 10%;
+            margin-bottom: 0%;
+        }
+        #errors {
+            height: 10%;
+            display: flex;
         }
         textarea {
             font-family: Georgia, 'Times New Roman', Times, serif;

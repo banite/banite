@@ -80,11 +80,14 @@
                             </div>
                           <div class="controls">
                             <textarea name="comments" class="floatLabel" id="comments" placeholder="Забележка"></textarea>
-                            </div>
-                              <button type="submit" class="submit">Резервирай</button>
+                            </div>              
                         </div>
                     </div>
                   </form>
+                  <input type="submit" class="submit" value="Резервирай" onclick="validate()">
+                  <div id="errors">
+
+                  </div>
               </div>
     </div>
     <script>
@@ -103,6 +106,40 @@
                   x.className = "topnav";
               }
           }
+          function validate() {
+            let name = document.getElementById('name').value;
+            //let genderTypeMale = document.getElementById('male');
+            //let genderTypeFemale = document.getElementById('female');
+            //let email = document.getElementById('Email').value;
+            //let pass = document.getElementById('Pass').value;
+            
+            let messContainer = document.getElementById('errors');
+            let isCorrect = true;
+
+            messContainer.innerHTML = '';
+            if (name === "" || name.length < 5) {
+                addError('Полето за име и фамилия не може да бъде празно!');
+            }
+
+            if (isCorrect) {
+                success('Success!');
+            } 
+
+            function addError(message) {
+                let error = document.createElement('p');
+                error.innerText = message;
+                error.style.color = 'red';
+                messContainer.appendChild(error);
+                isCorrect = false;
+            }
+
+            function success(message) {
+                let mess = document.createElement('p');
+                mess.innerText = message;
+                mess.style.color = 'green';
+                messContainer.appendChild(mess);
+            }
+        }
       </script>
 </body>
 </html>
